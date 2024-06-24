@@ -1,0 +1,134 @@
+nav{
+    background-color: #031044;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color: #fff;
+        font-weight: 900;
+    }
+}
+
+
+.AnimeItemStyled{
+    padding: 2rem 18rem;
+    background-color: #031044;
+  
+    h1 {
+      display: inline-block;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      color: #dde3e9;
+
+    }
+  
+    .title {
+      display: inline-block;
+      margin-top: 2rem ;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #dde3e9;
+      font-weight: 700;
+    }
+  
+    .description {
+      color: #e2e8ec;
+      line-height: 1.7rem;
+  
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: #797e7b;
+        font-weight: 600;
+      }
+    }
+  
+    .trailer-con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      iframe {
+        outline: none;
+        padding: 1.5rem;
+        border-radius: 10px;
+       
+      }
+    }
+  
+    .details {
+      background-color: #4d4a4a;
+      border-radius: 20px;
+      padding: 2rem;
+      border: 5px solid #787a7e;
+      color: white;
+  
+      .detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+  
+        img {
+          border-radius: 7px;
+        }
+      }
+  
+      .anime-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        margin-top: 2rem;
+  
+        p {
+          display: flex;
+          gap: 1rem;
+        }
+  
+        p span:first-child {
+          font-weight: 600;
+          color: #dde3e9;
+        }
+      }
+    }
+  
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 2rem;
+      padding: 2rem;
+      border-radius: 20px;
+
+  
+      .character {
+        padding: 0.4rem 0.6rem;
+        border-radius: 7px;
+        transition: all 0.4s ease-in-out;
+  
+        img {
+          width: 100%;
+        }
+  
+        h4 {
+          padding: 0.5rem 0;
+          color: #e7edf3;
+          font-size: 1.3rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+  
+        p {
+          color: #90daae;
+        }
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+}

@@ -1,0 +1,49 @@
+.GalleryStyled{
+    background-color: #031044;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: #eb5757;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+  .big-image{
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 5px solid #e5e7eb;
+    position: relative;
+
+    img{
+      width: 350px;
+    }
+  }
+
+  .small-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 7px;
+
+
+    img{
+      width: 6rem;
+      height: 6rem;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 3px solid #e5e7eb;
+    }
+  }
+}
