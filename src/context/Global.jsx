@@ -57,23 +57,32 @@ const baseUrl = "https://api.jikan.moe/v4";
   
     // handle change
 
-    const debounce = (func, wait) => {
-      let timeout;
-      return function(...args) {
-          const context = this;
-          clearTimeout(timeout);
-          timeout = setTimeout(() => func.apply(context, args), wait);
-      };
-  }
+  const handleChange2 = (e) => {
+    setSearch(e.target.value);
+    state.isSearch = true; // Assuming this is necessary for your application logic
+  
+    // Implement debounced search using a closure and setTimeout
+    const timeoutId = setTimeout(() => {
+      searchAnime(e.target.value);
+      if (e.target.value === "") {
+                state.isSearch = false;
+              } // Update isSearch based on search value
+    }, 300); // Adjust debounce delay as needed
+  
+    // Clear any previous timeout on subsequent keystrokes
+    return () => clearTimeout(timeoutId);
+  };
 
         const handleChange = (e) => {
             setSearch(e.target.value);
+      searchAnime(search);
+      state.isSearch = true;
             if (e.target.value === "") {
               state.isSearch = false;
             }
           };
 
-      const debouncedHandleChange = debounce(handleChange, 300);
+   
   
     // handle submit
     const handleSubmit = (e) => {
