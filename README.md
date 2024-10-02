@@ -1,10 +1,14 @@
-# Anistream
+# Anistream Deployment With VPC Using Terraform.
 
 An anime website built using React and Sass which leverages the jikan API for all the anime data.
 Implemented optimizations like debouncing,code-splitting and lazyloading through examination of lighthouse report.
             Features a well designed description page which has a trailer section along with character gallery of the anime.
             Utilized Context API for state-management
             Bifurcates Anime based on genres like Popular, Airing, Upcoming etc. along with search functionality.
+
+Used Terraform to create a VPC with @ Public And Private Subnets Along with internet Gateway , NAt Gateway And respective Private Route Tablees.
+Implemented Autoscalling Groups and Placed Load Balancers in public Subnets to access the app on the private subnet.
+Deployed the app on the EC2 in private subnet using Basition Host.
 
 
 ## Demo
