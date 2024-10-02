@@ -168,7 +168,6 @@ const baseUrl = "https://api.jikan.moe/v4";
           getAiringAnime,
           getAnimePictures,
           getPopularAnimePG,
-          debouncedHandleChange
         }}
       >
         {children}
