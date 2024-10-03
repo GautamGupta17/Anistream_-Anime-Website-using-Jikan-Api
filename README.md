@@ -6,9 +6,6 @@ Implemented optimizations like debouncing,code-splitting and lazyloading through
             Utilized Context API for state-management
             Bifurcates Anime based on genres like Popular, Airing, Upcoming etc. along with search functionality.
 
-Used Terraform to create a VPC with @ Public And Private Subnets Along with internet Gateway , NAt Gateway And respective Private Route Tablees.
-Implemented Autoscalling Groups and Placed Load Balancers in public Subnets to access the app on the private subnet.
-Deployed the app on the EC2 in private subnet using Basition Host.
 
 
 ## Demo
